@@ -1,0 +1,22 @@
+ div.container {
+   background-color: #669966;
+ }
+
+ div.alert {
+   cursor: pointer;
+ }
+
+ input {
+   color: #333;
+ }
+
+ .heroes div.selected:hover {
+   background-color: #BBD8DC !important;
+   color: white;
+ }
+
+ .heroes div:hover {
+   color: #607D8B;
+   background-color: #DDD;
+   left: .1em;
+ }

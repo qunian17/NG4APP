@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container">
+  <div class="panel-title">
+    <h4>{{title}}</h4>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 heroes">
+      <div *ngFor=" let hero of heroes" class="alert alert-info" [class.alert-danger]="hero === selecteHero" (click)="setHero(hero.id)"
+        role="alert">
+        <span class="badge"> {{ hero.id }}</span>&nbsp;{{ hero.name}}
+      </div>
+    </div>
+
+    <!--details-->
+    <app-hero-details [hero]="selecteHero" ></app-hero-details>
+    <app-hero-details [hero]="selecteHero" ></app-hero-details>
+     
+  </div>
+  <footer class="row">
+    <div class="col-xs-12 text-right">copy right @copy Anycheck.ltd</div>
+  </footer>
+
+</div>
